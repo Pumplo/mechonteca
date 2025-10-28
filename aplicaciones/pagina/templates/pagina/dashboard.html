@@ -13,11 +13,11 @@
         <!-- FIN MENSAJE DE BIENVENIDA DINÁMICO -->
 
         <div class="bg-white p-6 rounded-xl shadow-lg mb-8">
-            <h2 class="text-xl font-semibold mb-2">Progreso General: 40%</h2>
+            <h2 class="text-xl font-semibold mb-2">Progreso General:7%</h2>
             <div class="w-full md:w-full bg-gray-200 rounded-full h-4">
                 <div class="progress-bar-bg h-4 rounded-full" style="width: 40%"></div>
             </div>
-            <p class="text-sm text-gray-500 mt-2">¡Sigue así! Te quedan 3 cursos por completar.</p>
+            <p class="text-sm text-gray-500 mt-2">¡Sigue así! Te quedan x cursos por completar.</p>
         </div>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -47,36 +47,6 @@
                     Continuar con Derivadas
                 </button>
             </div>
-
-            <!-- Curso Álgebra -->
-            <div class="course-card bg-white p-6 rounded-xl shadow-md border-l-8 border-gray-400 opacity-70">
-                <h3 class="text-2xl font-bold mb-3 text-gray-500">Álgebra</h3>
-                <p class="text-sm text-gray-400 mb-4">Vectores, matrices y sistemas de ecuaciones.</p>
-                <div id="algebra-topicos" class="space-y-2 text-sm hidden">
-                    <p class="text-center text-gray-400">Aún no hay progreso.</p>
-                </div>
-                <button class="toggle-topicos w-full mt-4 bg-gray-200 text-gray-700 text-sm px-4 py-2 rounded-lg" data-target="algebra-topicos">
-                    Ver Tópicos
-                </button>
-                <button class="w-full mt-2 bg-gray-200 text-gray-700 text-sm px-4 py-2 rounded-lg" disabled>
-                    Comenzar
-                </button>
-            </div>
-
-            <!-- Curso Física -->
-            <div class="course-card bg-white p-6 rounded-xl shadow-md border-l-8 border-gray-400 opacity-70">
-                <h3 class="text-2xl font-bold mb-3 text-gray-500">Física</h3>
-                <p class="text-sm text-gray-400 mb-4">Mecánica clásica y termodinámica básica.</p>
-                <div id="fisica-topicos" class="space-y-2 text-sm hidden">
-                    <p class="text-center text-gray-400">Aún no hay progreso.</p>
-                </div>
-                <button class="toggle-topicos w-full mt-4 bg-gray-200 text-gray-700 text-sm px-4 py-2 rounded-lg" data-target="fisica-topicos">
-                    Ver Tópicos
-                </button>
-                <button class="w-full mt-2 bg-gray-200 text-gray-700 text-sm px-4 py-2 rounded-lg" disabled>
-                    Comenzar
-                </button>
-            </div>
         </div>
     </section>
 {% endblock %}
@@ -90,6 +60,9 @@
         "Recuerda revisar el Almacén Colaborativo para nuevos apuntes y certámenes.",
         "¡Vamos por ese 100%! Tienes 3 cursos pendientes para alcanzar la meta.",
         "Tu esfuerzo de hoy es tu éxito de mañana. ¡Sigue avanzando!",
+        "Si no te gusta cómo son las cosas, cámbialas",
+        "Sin estudiar se enferma el alma",
+        "Todo es practica",
     ];
 
     function getWelcomeMessage() {
